@@ -13,6 +13,26 @@
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
     <param name="transform_tolerance" value="0.1"/>
+    <param name="min_particles" value="20"/>
+    <param name="max_particles" value="100"/>
+    
+    <param name="initial_pose_x" value="0.0"/>
+    <param name="initial_pose_y" value="0.0"/>
+    <param name="initial_pose_a" value="0.0"/>
+    
+    <!-- How often robot should update values -->
+    <param name="update_min_a" value="0.13"/>
+    <param name="update_min_d" value="0.05"/>
+    
+    <!-- Lase min/max range and number of beams for comparison-->
+    <param name="laser_min_range" value="-1.0"/>
+    <param name="laser_max_range" value="-1.0"/>
+    <param name="laser_max_beams" value="30"/>
+    
+    <!-- Accounts for randomness in environment-->
+    <param name="laser_z_hit" value="0.99"/>
+    <param name="laser_z_rand" value="0.01"/>
+    
   </node>
   
   <!-- Move base -->
